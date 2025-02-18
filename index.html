@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tryout for Kids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        iframe {
+            width: 80%;
+            height: 200px;
+            border: 1px solid #ddd;
+            background-color: white;
+            margin-top: 10px;
+        }
+        .instructions {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .examples, .concepts {
+            text-align: left;
+            margin: 20px auto;
+            width: 80%;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        }
+        .examples code, .concepts code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tryout for Kids</h1>
+    <p class="instructions">Type your HTML code below and see the result!</p>
+    
+    <div class="concepts">
+        <h3>Basic HTML Concepts</h3>
+        <ul>
+            <li><strong>HTML Tags:</strong> Tags like <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, and <code>&lt;div&gt;</code> define the structure.</li>
+            <li><strong>Attributes:</strong> Provide extra information like <code>&lt;a href="url"&gt;</code> for links.</li>
+            <li><strong>Headings:</strong> Use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for titles.</li>
+            <li><strong>Paragraphs:</strong> Use <code>&lt;p&gt;</code> to add text.</li>
+            <li><strong>Formatting:</strong> Use <code>&lt;b&gt;</code> for bold, <code>&lt;i&gt;</code> for italic.</li>
+            <li><strong>Links:</strong> Use <code>&lt;a&gt;</code> to create clickable links.</li>
+            <li><strong>Lists:</strong> Use <code>&lt;ul&gt;</code> for bullet points and <code>&lt;ol&gt;</code> for numbered lists.</li>
+            <li><strong>Images:</strong> Use <code>&lt;img src="image.jpg"&gt;</code> to display pictures.</li>
+        </ul>
+    </div>
+    
+    <div class="examples">
+        <h3>Basic HTML Syntax</h3>
+        <p><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p>
+        <p><code>&lt;em&gt;This is emphasized text&lt;/em&gt;</code></p>
+        <p><code>&lt;i&gt;This is italic text&lt;/i&gt;</code></p>
+        <p><code>&lt;b&gt;This is bold text&lt;/b&gt;</code></p>
+        <p><code>&lt;mark&gt;This is highlighted text&lt;/mark&gt;</code></p>
+    </div>
+    
+    <textarea id="htmlCode" placeholder="Type your HTML here..."><h2>Hello, Kids!</h2>
+<p>This is your first HTML page.</p>
+</textarea>
+    <br>
+    <button onclick="updatePreview()">See the Magic!</button>
+    <br>
+    <iframe id="preview"></iframe>
+    
+    <script>
+        function updatePreview() {
+            var code = document.getElementById("htmlCode").value;
+            var iframe = document.getElementById("preview").contentWindow.document;
+            iframe.open();
+            iframe.write(code);
+            iframe.close();
+        }
+        
+        // Auto-update preview on typing
+        document.getElementById("htmlCode").addEventListener("input", updatePreview);
+    </script>
+</body>
+</html>
