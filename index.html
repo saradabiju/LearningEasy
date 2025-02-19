@@ -6,76 +6,87 @@
     <title>HTML Tryout for Kids</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #ffebcd;
         }
         textarea {
             width: 80%;
             height: 150px;
             margin-top: 10px;
             font-size: 16px;
+            border: 2px solid #ff69b4;
+            background: #fff3e6;
+            border-radius: 10px;
         }
         iframe {
             width: 80%;
             height: 200px;
-            border: 1px solid #ddd;
+            border: 2px solid #ff69b4;
             background-color: white;
             margin-top: 10px;
+            border-radius: 10px;
         }
         .instructions {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 10px;
+            color: #ff4500;
         }
         .examples, .concepts {
             text-align: left;
             margin: 20px auto;
             width: 80%;
-            background: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+            background: #ffdde1;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
         }
         .examples code, .concepts code {
-            background: #f0f0f0;
-            padding: 2px 5px;
-            border-radius: 3px;
+            background: #fdfd96;
+            padding: 4px 7px;
+            border-radius: 5px;
+        }
+        .concepts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .concepts li {
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 10px;
+            background: #ffb6c1;
+            border-radius: 10px;
+        }
+        .concepts li strong {
+            margin-right: 10px;
+            color: #d63484;
         }
     </style>
 </head>
 <body>
-    <h1>HTML Tryout for Kids</h1>
-    <p class="instructions">Type your HTML code below and see the result!</p>
+    <h1>🎨 HTML Tryout for Kids 🎈</h1>
+    <p class="instructions">Type your HTML code below and see the result! 🎭</p>
     
     <div class="concepts">
-        <h3>Basic HTML Concepts</h3>
+        <h3>Basic HTML Concepts 🏗️</h3>
         <ul>
-            <li><strong>HTML Tags:</strong> Tags like <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, and <code>&lt;div&gt;</code> define the structure.</li>
-            <li><strong>Attributes:</strong> Provide extra information like <code>&lt;a href="url"&gt;</code> for links.</li>
-            <li><strong>Headings:</strong> Use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for titles.</li>
-            <li><strong>Paragraphs:</strong> Use <code>&lt;p&gt;</code> to add text.</li>
-            <li><strong>Formatting:</strong> Use <code>&lt;b&gt;</code> for bold, <code>&lt;i&gt;</code> for italic.</li>
-            <li><strong>Links:</strong> Use <code>&lt;a&gt;</code> to create clickable links.</li>
-            <li><strong>Lists:</strong> Use <code>&lt;ul&gt;</code> for bullet points and <code>&lt;ol&gt;</code> for numbered lists.</li>
-            <li><strong>Images:</strong> Use <code>&lt;img src="image.jpg"&gt;</code> to display pictures.</li>
+            <li><strong>📌 HTML Tags:</strong> Tags are the building blocks of a webpage.<br> Example: <code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></li>
+            <li><strong>🔗 Attributes:</strong> Attributes add extra information to tags.<br> Example: <code>&lt;a href="https://example.com"&gt;Click Me&lt;/a&gt;</code></li>
+            <li><strong>🔠 Headings:</strong> Headings define titles of sections.<br> Example: <code>&lt;h1&gt;Big Title&lt;/h1&gt;</code></li>
+            <li><strong>📄 Paragraphs:</strong> Used for writing text.<br> Example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
+            <li><strong>✨ Formatting:</strong> Used to style text.<br> Example: <code>&lt;b&gt;Bold Text&lt;/b&gt;</code>, <code>&lt;i&gt;Italic Text&lt;/i&gt;</code></li>
+            <li><strong>🔗 Links:</strong> Create clickable links.<br> Example: <code>&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;</code></li>
+            <li><strong>📋 Lists:</strong> Used to list items.<br> Example: <code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code></li>
+            <li><strong>🖼️ Images:</strong> Add pictures to webpages.<br> Example: <code>&lt;img src="image.jpg" alt="A picture"&gt;</code></li>
         </ul>
-    </div>
-    
-    <div class="examples">
-        <h3>Basic HTML Syntax</h3>
-        <p><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p>
-        <p><code>&lt;em&gt;This is emphasized text&lt;/em&gt;</code></p>
-        <p><code>&lt;i&gt;This is italic text&lt;/i&gt;</code></p>
-        <p><code>&lt;b&gt;This is bold text&lt;/b&gt;</code></p>
-        <p><code>&lt;mark&gt;This is highlighted text&lt;/mark&gt;</code></p>
     </div>
     
     <textarea id="htmlCode" placeholder="Type your HTML here..."><h2>Hello, Kids!</h2>
 <p>This is your first HTML page.</p>
 </textarea>
     <br>
-    <button onclick="updatePreview()">See the Magic!</button>
+    <button onclick="updatePreview()">🎈 See the Magic! 🎨</button>
     <br>
     <iframe id="preview"></iframe>
     
